@@ -507,3 +507,134 @@ nav ul ul.dropdown-content li a:focus {
   font-weight: 400;
   color: #003366;
 }
+
+/* Additional Responsive for smaller devices */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+  .header-container {
+    padding: 0.5rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+  }
+  nav ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    width: 100%;
+  }
+  nav ul ul.dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #007bff;
+  }
+  nav ul ul.dropdown-content li a {
+    padding-left: 1.5rem;
+  }
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+  .hero-section {
+    margin: 1rem 0;
+  }
+  .swiper {
+    height: 250px;
+  }
+  .slide-text h2 {
+    font-size: 1.2rem;
+  }
+  .slide-text p {
+    font-size: 1rem;
+  }
+  .sale-banner {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    max-width: 100%;
+  }
+  .countdown-timer {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .countdown-timer div {
+    min-width: auto;
+    padding: 0.3rem 0.5rem;
+  }
+  .featured-products {
+    margin: 2rem 0;
+    padding: 0 0.5rem;
+  }
+  .featured-products h2 {
+    font-size: 1.4rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .product-card {
+    padding: 0.75rem;
+  }
+  .product-card img {
+    height: 120px;
+  }
+  .product-card h3 {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  .testimonials {
+    margin: 2rem 0;
+    padding: 0 0.5rem;
+  }
+  .testimonials h2 {
+    font-size: 1.4rem;
+  }
+  .testimonial-grid {
+    gap: 1rem;
+  }
+  .testimonial-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .product-page {
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+  }
+  .product-gallery,
+  .product-details {
+    max-width: 100%;
+  }
+  .product-details h1 {
+    font-size: 1.5rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .old-price {
+    font-size: 1rem;
+  }
+  .color-options label {
+    font-size: 0.9rem;
+  }
+  .color-options select {
+    width: 100%;
+  }
+  .description,
+  .customer-reviews,
+  .related-products {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+  }
+}
