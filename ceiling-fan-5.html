@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ceiling Fan 5 - OnlyFansHere</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+        .product-page {
+            display: flex;
+            max-width: 900px;
+            margin: 2rem auto;
+            gap: 2rem;
+        }
+        .image-gallery {
+            flex: 1;
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            height: 450px;
+        }
+        .product-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .product-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        label {
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        select, input[type="number"] {
+            width: 150px;
+            padding: 0.4rem 0.6rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-buy {
+            background-color: #6f42c1; /* purple */
+            color: white;
+        }
+        .btn-cart {
+            background-color: #007bff;
+            color: white;
+        }
+        .product-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+                max-width: 100%;
+                margin: 1rem;
+            }
+            .image-gallery, .product-details {
+                flex: none;
+                width: 100%;
+            }
+            select, input[type="number"] {
+                width: 100%;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <h1>OnlyFansHere</h1>
+                    <p class="slogan">We Only Sell Fans Here</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="featured.html">Featured</a></li>
+                <li class="dropdown">
+                    <a href="catalogue.html" class="dropbtn">Catalogue &#x25BC;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="neck-fans.html">Neck Fans</a></li>
+                        <li><a href="hand-fans.html">Hand Fans</a></li>
+                        <li><a href="desk-fans.html">Desk Fans</a></li>
+                        <li><a href="ceiling-fans.html">Ceiling Fans</a></li>
+                        <li><a href="home-fans.html">Home Fans</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+            <form id="search-form" class="search-form" role="search" aria-label="Site Search">
+                <input type="search" id="search-input" class="search-input" placeholder="Search fans..." aria-label="Search fans" />
+            </form>
+            <div class="cart-icon">
+                <a href="#" id="cart-button" aria-label="View Cart">
+                    🛒 <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-page">
+            <div class="image-gallery">🌟</div>
+            <div class="product-details">
+                <h1 class="product-title">Ceiling Fan 5</h1>
+                <p class="product-price">$134.99</p>
+                <label for="colorSelect">Color:</label>
+                <select id="colorSelect" name="color">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                </select>
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" name="quantity" min="1" value="1" />
+                <div class="buttons">
+                    <button class="btn btn-cart add-to-cart-btn" data-name="Ceiling Fan 5" data-price="134.99">Ceiling Fan 5</button>
+                </div>
+                <div class="product-description">
+                    <h2>Description</h2>
+                    <p>This is a placeholder description for Ceiling Fan 5. It is a premium ceiling fan with quiet operation and elegant design.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 OnlyFansHere. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OnlyFansHere - We Only Sell Fans Here</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Swiper CSS CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">OnlyFansHere</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="featured.html">Featured</a></li>
+          <li class="dropdown">
+            <a href="catalogue.html" class="dropbtn">Catalogue &#x25BC;</a>
+            <ul class="dropdown-content">
+              <li><a href="neck-fans.html">Neck Fans</a></li>
+              <li><a href="hand-fans.html">Hand Fans</a></li>
+              <li><a href="desk-fans.html">Desk Fans</a></li>
+              <li><a href="ceiling-fans.html">Ceiling Fans</a></li>
+              <li><a href="home-fans.html">Home Fans</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon" aria-label="Shopping Cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section with Swiper Slider -->
+    <section class="hero-section">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Images/Hand Fan 1/1.webp" alt="Hand Fan 1" />
+            <div class="slide-text">
+              <h2>Portable Handheld Fan</h2>
+              <p>5 Wind Speeds, USB Rechargeable</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/Neck Fan 1/Neck Fan 1 (2).png" alt="Neck Fan 1" />
+            <div class="slide-text">
+              <h2>Warmco 10000mAh Neck Fan</h2>
+              <p>4-Speed Rechargeable Personal Fan</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/Desk Fan 1/desk-fan-1-main.jpg" alt="Desk Fan 1" />
+            <div class="slide-text">
+              <h2>Desk Fan 1</h2>
+              <p>Compact and Quiet</p>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- Sale Banner with Countdown Timer -->
+    <section class="sale-banner" aria-label="25 Days of Summer Sale Timer">
+      <h3>25 Days of Summer Sale!</h3>
+      <div class="countdown-timer" id="countdown-timer" aria-live="polite">
+        <div><span id="days">00</span> Days</div>
+        <div><span id="hours">00</span> Hours</div>
+        <div><span id="minutes">00</span> Minutes</div>
+        <div><span id="seconds">00</span> Seconds</div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="Images/Hand Fan 1/1.webp" alt="Hand Fan 1" />
+          <h3>Portable Handheld Fan</h3>
+          <p class="price">£9.99</p>
+          <a href="hand-fan-1.html" class="btn">View</a>
+        </article>
+        <article class="product-card">
+          <img src="Images/Neck Fan 1/Neck Fan 1 (2).png" alt="Neck Fan 1" />
+          <h3>Warmco Neck Fan</h3>
+          <p class="price">£34.99</p>
+          <a href="neck-fan-1.html" class="btn">View</a>
+        </article>
+        <article class="product-card">
+          <span title="Desk Fan 1" style="font-size: 4rem; display: inline-block;">🌀</span>
+          <h3>Desk Fan 1</h3>
+          <p class="price">£19.99</p>
+          <a href="desk-fan-1.html" class="btn">View</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p class="review">
+            "Great fans, very reliable and quiet. Highly recommend!"
+          </p>
+          <footer>- Jane D.</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="review">
+            "Excellent customer service and fast delivery."
+          </p>
+          <footer>- Mark S.</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="review">
+            "The neck fan is a lifesaver during summer workouts."
+          </p>
+          <footer>- Lisa K.</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 OnlyFansHere. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/placeholder-images.js"></script>
+</body>
+</html>
