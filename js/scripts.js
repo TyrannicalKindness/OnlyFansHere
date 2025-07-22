@@ -69,3 +69,28 @@ if (thumbnails && mainImage) {
     });
   });
 }
+
+// Mobile/Desktop mode toggle switch
+const modeSwitch = document.getElementById('mode-switch');
+
+function applyMode(isMobile) {
+  if (isMobile) {
+    document.body.classList.add('mobile-mode');
+  } else {
+    document.body.classList.remove('mobile-mode');
+  }
+}
+
+if (modeSwitch) {
+  // Load saved mode from localStorage
+  const savedMode = localStorage.getItem('mobileMode');
+  const isMobile = savedMode === 'true';
+  modeSwitch.checked = isMobile;
+  applyMode(isMobile);
+
+  modeSwitch.addEventListener('change', () => {
+    const isChecked = modeSwitch.checked;
+    applyMode(isChecked);
+    localStorage.setItem('mobileMode', isChecked);
+  });
+}
