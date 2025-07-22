@@ -94,3 +94,26 @@ if (modeSwitch) {
     localStorage.setItem('mobileMode', isChecked);
   });
 }
+
+// Dropdown toggle for mobile devices
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdown = document.querySelector('.nav-links .dropdown');
+  const dropbtn = dropdown ? dropdown.querySelector('.dropbtn') : null;
+
+  if (dropdown && dropbtn) {
+    dropbtn.addEventListener('click', (e) => {
+      // Only toggle on mobile mode or small screens
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      }
+    });
+
+    // Optional: close dropdown if clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target) && dropdown.classList.contains('open')) {
+        dropdown.classList.remove('open');
+      }
+    });
+  }
+});

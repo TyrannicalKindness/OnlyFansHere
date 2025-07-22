@@ -584,14 +584,15 @@ body.mobile-mode nav.navbar {
     font-size: 1.5rem;
   }
   nav ul {
-    flex-direction: column;
-    gap: 0.3rem;
+    flex-direction: row; /* Override column to row for horizontal nav links */
+    gap: 0.5rem;
     width: 100%;
+    flex-wrap: wrap;
   }
   nav ul li a {
     padding: 0.5rem 1rem;
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: auto;
   }
   nav ul ul.dropdown-content {
     position: static;
@@ -700,5 +701,32 @@ body.mobile-mode nav.navbar {
   .related-products {
     margin-top: 1rem;
     padding: 0 0.5rem;
+  }
+}
+
+/* Dropdown open class for mobile */
+nav ul li.dropdown.open > ul.dropdown-content {
+  display: block !important;
+  position: static;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #007bff;
+  width: 100%;
+  margin-top: 0.5rem;
+  z-index: 1000;
+}
+
+/* Improve mobile dropdown usability */
+@media (max-width: 768px) {
+  nav ul li.dropdown > a::after {
+    content: " ▼";
+    font-size: 0.6rem;
+    cursor: pointer;
+  }
+  nav ul ul.dropdown-content {
+    width: 100%;
+  }
+  nav ul li.dropdown.open > ul.dropdown-content {
+    display: block !important;
   }
 }
